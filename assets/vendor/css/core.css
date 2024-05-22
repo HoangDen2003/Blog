@@ -776,7 +776,11 @@ progress {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
+<<<<<<< HEAD
   padding-right: calc(var(--bs-gutter-x) * 0.5);
+=======
+  /*padding-right: calc(var(--bs-gutter-x) * 0.5);*/
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
@@ -2956,6 +2960,7 @@ fieldset:disabled .btn {
   left: auto;
 }
 
+<<<<<<< HEAD
 .layout-navbar .navbar-dropdown .dropdown-menu {
   /* min-width: 22rem; */
   overflow: hidden;
@@ -2974,6 +2979,8 @@ fieldset:disabled .btn {
   transform: translate(-50%, -30%);
 }
 
+=======
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
@@ -3953,8 +3960,13 @@ fieldset:disabled .btn {
 }
 
 .card-header {
+<<<<<<< HEAD
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   margin-bottom: 0;
+=======
+  /* padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x); */
+  margin-bottom: 25px;
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
@@ -6754,7 +6766,11 @@ fieldset:disabled .btn {
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+<<<<<<< HEAD
   white-space: nowrap;
+=======
+  /* white-space: nowrap; */
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046
 }
 
 .vr {
@@ -16482,7 +16498,11 @@ body {
   .container-lg,
   .container-xl,
   .container-xxl {
+<<<<<<< HEAD
     padding-right: 1.625rem;
+=======
+    /*padding-right: 1.625rem;*/
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046
     padding-left: 1.625rem;
   }
 }
@@ -18576,8 +18596,11 @@ html:not(.layout-footer-fixed) .content-wrapper {
 .footer.bg-light hr {
   border-color: rgba(105, 122, 141, 0.0783835294);
 }
+<<<<<<< HEAD
 
 table.dataTable .form-check-input {
   width: 18px;
   height: 18px
 }
+=======
+>>>>>>> 925bb99a012967a2c08fd1fafc496cc0c9861046

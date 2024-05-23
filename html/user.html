@@ -787,18 +787,16 @@
                               class="dataTables_length"
                               id="DataTables_Table_0_length"
                             >
-                              <label>
-                                <select
-                                  name="DataTables_Table_0_length"
-                                  aria-controls="DataTables_Table_0"
-                                  class="form-select"
-                                >
-                                  <option value="10">10</option>
-                                  <option value="25">25</option>
-                                  <option value="50">50</option>
-                                  <option value="100">100</option>
-                                </select>
-                              </label>
+                              <select
+                                name="DataTables_Table_0_length"
+                                aria-controls="DataTables_Table_0"
+                                class="form-select"
+                              >
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                              </select>
                             </div>
                           </div>
                           <a class="text-danger cursor me-4">
@@ -843,7 +841,6 @@
                             </th>
                             <th>ID</th>
                             <th>Username</th>
-                            <th>Password</th>
                             <th>Email</th>
                             <th>Role</th>
                             <th>Status</th>
@@ -860,7 +857,6 @@
                             </td>
                             <td>#1</td>
                             <td>hoang</td>
-                            <td>12345</td>
                             <td>hadinhhoang041104@gmail.com</td>
                             <td>admin</td>
                             <td>
@@ -870,21 +866,29 @@
                             </td>
                             <td>
                               <div class="d-flex">
-                                <a class="mr-8 text-warning cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-eye"></i>
-                                  </div>
-                                </a>
-                                <a class="mr-8 text-primary cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                  </div>
-                                </a>
-                                <a class="text-danger cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                  </div>
-                                </a>
+                                <button
+                                  class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i
+                                    class="bx bx-dots-vertical-rounded me-2"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu dropdown-menu-end m-0"
+                                  style=""
+                                >
+                                  <a href="detail.html" class="dropdown-item"
+                                    ><i class="bx bx-show-alt"></i> Details</a
+                                  >
+                                  <div class="dropdown-divider"></div>
+                                  <a
+                                    href="javascript:;"
+                                    class="dropdown-item text-danger delete-record align-items-center"
+                                    ><i class="bx bxs-trash"></i> Delete</a
+                                  >
+                                </div>
                               </div>
                             </td>
                           </tr>
@@ -895,33 +899,40 @@
                                 class="dt-checkboxes form-check-input"
                               />
                             </td>
-                            <td>#2</td>
+                            <td>#1</td>
                             <td>hoang</td>
-                            <td>12345</td>
-                            <td>aaa@gmail.com</td>
+                            <td>hadinhhoang041104@gmail.com</td>
                             <td>admin</td>
                             <td>
-                              <span class="badge bg-label-secondary me-1"
-                                >Inactive</span
+                              <span class="badge bg-label-success me-1"
+                                >Active</span
                               >
                             </td>
                             <td>
                               <div class="d-flex">
-                                <a class="mr-8 text-warning cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-eye"></i>
-                                  </div>
-                                </a>
-                                <a class="mr-8 text-primary cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                  </div>
-                                </a>
-                                <a class="text-danger cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                  </div>
-                                </a>
+                                <button
+                                  class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i
+                                    class="bx bx-dots-vertical-rounded me-2"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu dropdown-menu-end m-0"
+                                  style=""
+                                >
+                                  <a href="detail.html" class="dropdown-item"
+                                    ><i class="bx bx-show-alt"></i> Details</a
+                                  >
+                                  <div class="dropdown-divider"></div>
+                                  <a
+                                    href="javascript:;"
+                                    class="dropdown-item text-danger delete-record align-items-center"
+                                    ><i class="bx bxs-trash"></i> Delete</a
+                                  >
+                                </div>
                               </div>
                             </td>
                           </tr>
@@ -932,33 +943,40 @@
                                 class="dt-checkboxes form-check-input"
                               />
                             </td>
-                            <td>#3</td>
+                            <td>#1</td>
                             <td>hoang</td>
-                            <td>12345</td>
-                            <td>bbb@gmail.com</td>
+                            <td>hadinhhoang041104@gmail.com</td>
                             <td>admin</td>
                             <td>
-                              <span class="badge bg-label-warning me-1"
-                                >PENDING</span
+                              <span class="badge bg-label-success me-1"
+                                >Active</span
                               >
                             </td>
                             <td>
                               <div class="d-flex">
-                                <a class="mr-8 text-warning cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-eye"></i>
-                                  </div>
-                                </a>
-                                <a class="mr-8 text-primary cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                  </div>
-                                </a>
-                                <a class="text-danger cursor">
-                                  <div class="icon p-4-8 bd-1-main br-8 fs-14">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                  </div>
-                                </a>
+                                <button
+                                  class="btn btn-sm btn-icon dropdown-toggle hide-arrow"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i
+                                    class="bx bx-dots-vertical-rounded me-2"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu dropdown-menu-end m-0"
+                                  style=""
+                                >
+                                  <a href="detail.html" class="dropdown-item"
+                                    ><i class="bx bx-show-alt"></i> Details</a
+                                  >
+                                  <div class="dropdown-divider"></div>
+                                  <a
+                                    href="javascript:;"
+                                    class="dropdown-item text-danger delete-record align-items-center"
+                                    ><i class="bx bxs-trash"></i> Delete</a
+                                  >
+                                </div>
                               </div>
                             </td>
                           </tr>
@@ -1420,6 +1438,9 @@
         </div>
       </div>
     </div>
+
+    <!-- pagination -->
+    <script src="../assets/js/pagination.js"></script>
 
     <!-- Dialog -->
 

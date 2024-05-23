@@ -152,11 +152,11 @@ if (inputUserName != null) {
         content.style.opacity = "0.4";
         isHiddenEditUser = true;
         isHiddenEditCate = true;
-        inputUserName.value = category.children[1].textContent;
-        inputPassword.value = category.children[2].textContent;
-        inputRePassword.value = category.children[2].textContent;
-        inputEmail.value = category.children[3].textContent;
-        inputRole.value = category.children[4].textContent;
+        inputUserName.value = category.children[2].textContent;
+        inputPassword.value = category.children[3].textContent;
+        inputRePassword.value = category.children[3].textContent;
+        inputEmail.value = category.children[4].textContent;
+        inputRole.value = category.children[5].textContent;
       } else {
         dialogEdit.style.display = "none";
         content.style.opacity = "1";

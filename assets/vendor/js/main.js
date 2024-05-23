@@ -14,6 +14,7 @@ const btnSaveEdit = document.querySelector("#edit-dialog .btn_ok");
 const btnSaveDelete = document.querySelector("#delete-dialog .btn_ok");
 
 const addBtn = document.querySelector(".content .page-header .add-item");
+const deleteBtn = document.querySelector(".content .page-header .delete-item");
 const content = document.querySelector(".content");
 const tableList = document.querySelector(".content .page-list");
 const tableHeader = document.querySelector(".content .page-header");
@@ -54,6 +55,20 @@ addBtn.addEventListener("click", function () {
     content.style.opacity = "1";
     isHiddenAddCate = false;
     isHiddenAddUser = false;
+  }
+});
+
+deleteBtn.addEventListener("click", function () {
+  if (isHiddenDeleteCate === false || isHiddenDeleteUser === false) {
+    dialogDelete.style.display = "block";
+    content.style.opacity = "0.4";
+    isHiddenDeleteCate = true;
+    isHiddenDeleteUser = true;
+  } else {
+    dialogDelete.style.display = "none";
+    content.style.opacity = "1";
+    isHiddenDeleteCate = false;
+    isHiddenDeleteUser = false;
   }
 });
 
@@ -153,10 +168,10 @@ if (inputUserName != null) {
         isHiddenEditUser = true;
         isHiddenEditCate = true;
         inputUserName.value = category.children[2].textContent;
-        inputPassword.value = category.children[3].textContent;
-        inputRePassword.value = category.children[3].textContent;
-        inputEmail.value = category.children[4].textContent;
-        inputRole.value = category.children[5].textContent;
+        // inputPassword.value = category.children[3].textContent;
+        // inputRePassword.value = category.children[3].textContent;
+        inputEmail.value = category.children[3].textContent;
+        inputRole.value = category.children[4].textContent;
       } else {
         dialogEdit.style.display = "none";
         content.style.opacity = "1";

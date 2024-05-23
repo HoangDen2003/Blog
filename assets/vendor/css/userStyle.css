@@ -319,7 +319,7 @@ body {
 }
 
 .search-input > a {
-    right: 0px;
+    right: -5px;
 }
 
 .sort .form-sort {

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var rowsPerPage = 1;
+  var rowsPerPage = 10;
   const select = document.querySelector("select.form-select");
 
   const rows = document.querySelectorAll(".table tbody tr");

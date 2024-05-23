@@ -32,6 +32,9 @@ const inputRePassword = document.querySelector("#edit-dialog input#RePassword");
 
 // language
 const inputLanguage = document.querySelector("#edit-dialog input#language");
+const localeLanguage = document.querySelector("#edit-dialog input#locale");
+const statusLanguage = document.querySelector("#edit-dialog select");
+console.log(statusLanguage);
 
 // check cate
 let isHiddenAddCate = false;
@@ -200,13 +203,16 @@ if (inputLanguage != null) {
   table.addEventListener("click", function (e) {
     const category = e.target.closest("tr");
     if (e.target.closest(".text-primary")) {
-      console.log(category.children[2].textContent);
+      const vlSelect = category.children[6].querySelector("span").textContent;
+      console.log(category.children[6].querySelector("span").textContent);
       if (isHiddenEditCate === false || isHiddenEditUser === false) {
         dialogEdit.style.display = "block";
         content.style.opacity = "0.4";
         isHiddenEditCate = true;
         isHiddenEditUser = true;
         inputLanguage.value = category.children[2].textContent;
+        localeLanguage.value = category.children[3].textContent;
+        statusLanguage.value = vlSelect;
       } else {
         dialogEdit.style.display = "none";
         content.style.opacity = "1";
